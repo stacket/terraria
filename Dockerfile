@@ -1,6 +1,6 @@
 FROM debian:buster-slim
 
-ARG VERSION=1404
+ARG VERSION=1405
 
 ADD  ./init.sh /init.sh
 ADD  ./cmd.sh /cmd.sh
@@ -14,7 +14,7 @@ WORKDIR /tmp
 
 RUN apt-get update && apt-get install -y unzip 
 
-ADD "https://terraria.org/system/dedicated_servers/archives/000/000/038/original/terraria-server-1404.zip" terraria-server.zip
+ADD "https://www.terraria.org/system/dedicated_servers/archives/000/000/039/original/terraria-server-1405.zip" terraria-server.zip
 
 RUN mkdir /app
 
